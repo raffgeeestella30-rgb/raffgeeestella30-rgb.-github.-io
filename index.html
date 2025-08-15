@@ -1,0 +1,125 @@
+<html>
+        <head><title>Downloaded HTML</title></head>
+        <body>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;"><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Surprise</title>
+<style>
+    body {
+        margin: 0;
+        background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+        height: 100vh;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 40px; /* moved everything closer to top */
+    }
+
+    /* Table Base */
+    .table {
+        position: relative;
+        width: 300px;
+        height: 150px;
+        background: #8B4513;
+        border-radius: 0 0 15px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        margin-bottom: 10px; /* reduced gap below table */
+    }
+
+    /* Table Top */
+    .table-top {
+        position: absolute;
+        top: -20px;
+        width: 300px;
+        height: 20px;
+        background: linear-gradient(to bottom, #a0522d, #8b4513);
+        border-radius: 10px;
+    }
+
+    /* Present */
+    .present {
+        position: absolute;
+        top: -120px; /* starts closer so drop is shorter */
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(135deg, #ff6b6b, #ff4757);
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        animation: fall 2s ease forwards;
+    }
+
+    @keyframes fall {
+        0% { top: -120px; }
+        100% { top: 0; }
+    }
+
+    /* Interaction Text */
+    .open-text {
+        margin-top: 5px; /* moved up */
+        color: white;
+        font-size: 1.2rem;
+        background: rgba(0,0,0,0.3);
+        padding: 8px 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+        text-align: center;
+    }
+
+    .open-text:hover {
+        background: rgba(0,0,0,0.5);
+    }
+
+    /* Letter */
+    .letter {
+        display: none;
+        margin-top: 5px; /* moved up */
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 280px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        font-size: 1rem;
+        color: #333;
+        text-align: center;
+        line-height: 1.4;
+    }
+</style>
+</head>
+<body>
+
+<div class="table">
+    <div class="table-top"></div>
+    <div class="present">🎁</div>
+</div>
+
+<div class="open-text" onclick="openPresent()">open your lovely present</div>
+
+<div class="letter" id="letter">
+    Happy birthday langga!! 🥳💖 ik i won't be able to be on yo side today but padayon lang king asa ka happy po hehe even tho i wanted it to be me labag lang jd sa akong buot ang tanan HAHAHHAH wish u da best op eberithing and wishing for a lootttt of more birthday's to comeee tenkiess for all the memories!!
+</div>
+
+<script>
+    function openPresent() {
+        document.querySelector('.present').style.display = 'none';
+        document.getElementById('letter').style.display = 'block';
+    }
+</script>
+
+</body>
+</html></pre>
+        </body>
+    </html>
